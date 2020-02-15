@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+
+<body>
+<header>
+    <div id="divSlide">
+    <img src="images/slide/img1.jpg" alt="slide1" class="imgs">
+    <img src="images/slide/img2.png" alt="slide2" class="imgs">
+    <img src="images/slide/img3.jpg" alt="slide3" class="imgs">
+    <img src="images/slide/img4.jpg" alt="slide4" class="imgs">
+</div>
+       <input type="checkbox" id="check-one">
+       <label for="check-one">
+           <div>
+               <span id="span1"></span>
+               <span id="span2"></span>
+            <span id="span3"></span>
+           </div>
+       </label>
+       <nav>
+           <ul>
+               <li id="picasso">
+               PicassO
+
+               </li>
+               <li id="ll2">
+                   <input type="text" placeholder="Recherche">
+
+               </li>
+               <li>
+                <a href="galery.html">   GALERY</a>
+               </li>
+               <li>
+               <a href="inscris-toi.html"> INSCRIS-TOI</a> 
+            </li>
+            <li>
+                <a href="reservation.html"> RESERVATION</a> 
+             </li>
+           </ul>
+       </nav>
+       <button class="btns b1">
+        <
+       </button>
+       <button class="btns b2">
+        >
+    </button>
+       <div class="contener">
+        <h1 id="h1">
+                PicassO...
+        </h1>
+        <h2 id="h2h">
+            INSCRIS-TOI
+            
+    </h2>
+
+       </div>
+       
+           <a href="inscris-toi.html">
+            <button id="btn1">
+        INSCRIS
+    </button>
+    </a>
+   
+ </header>
+<div id="dpar">
+    <button class="bt bl1" onclick="slideSection2();">
+        <
+       </button>
+       <button class="bt bl2" onclick="slideSection1();">
+        >
+    </button>
+    <img src="images/ville/ville5.jpg" alt="img6">
+    <img src="images/bateau/bateau6.jpg" alt="img2">
+    <img src="images/flour/fleur3.jpg" alt="img3">
+    <img src="images/nature/nature5.jpg" alt="img4">
+    <img src="images/nature/nature7.jpg" alt="img5">
+    <img src="images/animaux/animaux2.jpg" alt="img1">
+    <img src="images/bateau/bateau8.jpg" alt="img7">
+    <img src="images/flour/fleur8.jpg" alt="img8">
+</div>
+    <form name="f" id="f1">
+        <fieldset>
+            <legend>
+                INSCRIPTION
+            </legend>
+            <div>
+               <p> First Name:</p> <p> <input type="text" placeholder="First Name" id="prenom" onkeyup="valid(this,affichPrenom,regPrenom);"> </p>
+            </div>
+            <span id="affich1"></span>
+            <div>
+              <p> Last Name:</p>  <p> <input type="text" placeholder="Last Name" id="Nom" onkeyup="valid(this,affichNom,regPrenom);"> </p>
+            </div>
+            <span id="affich2"></span> 
+            <div>
+               <p> CIN: </p> <p><input type="text" placeholder="CIN" id="cin"  onkeyup="valid(this,affichCin,regPrenom);">  </p>
+            </div>
+            <span id="affich3"></span>
+            <div>
+              <p>  Email: </p> <p><input type="text" placeholder="Email" id="email"   onkeyup="valid(this,affichEmail,regEmail);"> </p>
+            </div>
+            <span id="affich4" ></span>
+            <div>
+               <p> Passe Word: </p> <p><input type="password" placeholder="password" id="password"  onkeyup="valid(this,affichPassword,regpass);"> </p>
+            </div>
+            <span id="affich5"></span>
+            <div>
+              <p> Confirmation Passe Word: </p> <p><input type="password" placeholder="confirmation" id="confirmation"   onkeyup="valid(this,affichConfirmation,regpass);confirmationPassWord();"> </p>
+            </div>
+            <span id="affich6"></span>
+            
+        </fieldset>
+
+    </form>
+    <div id="dbalise">
+                
+               
+        <button id="btinscis" class="btnss1" onclick="affichageValid()">INSCRIS-TOI</button>
+        <a href="#" > ANNULER</a>
+    </div>
+   <div id="Affich" class="lparks">
+            <h1 id="hAffich" ></h1>
+            <button id="_bts">
+                close
+            </button>
+</div>
+    <div class="park" id="pk">
+
+    </div>
+ <footer id="f1">
+    <div class="divsfooter">
+        <div id="dfooter1">
+       <h1>PicassO</h1>
+    </div>
+        <div id="dfooter2"> 
+            <pre>
+            <h1>Pablo Ruiz</h1>
+            <p> 
+Pablo Ruiz Picasso, né à Malaga le 25 octobre 1881 et mort le 8 avril 1973 à Mougins,est un peintre, dessinateur,sculpteur et graveur espagnol ayant passé l'essentiel de sa vie en France.
+                
+            </p>
+            </pre>
+            <pre>
+            <h1> QUICK LINKS</h1>
+           
+                <p> <i class="fas fa-arrow-right" style="color: #688095;height: 10px;"></i> HOME</p>
+                <p><i class="fas fa-arrow-right" style="color: #688095;height: 10px;"></i>  réservation</p>
+                <p><i class="fas fa-arrow-right" style="color: #688095;height: 10px;"></i>  galery</p>
+                <p> <i class="fas fa-arrow-right" style="color: #688095;height: 10px;"></i>  CONTACT US </p>
+                <p> <i class="fas fa-arrow-right" style="color: #688095;height: 10px;"></i>  INSCRIS-TOI</p>
+            </pre>
+        </div>
+        <div id="dfooter3">
+            <pre>
+        <h1> CONTACT US</h1>
+        <p> Feel free to get in touch with us via phone or send us a message
+             </p>
+    
+     <p>  <span>+0001290003087</span> <span>picasso@gmail.com</span></p> 
+    </pre>
+        </div>
+    </div>
+    <div id="childfooter" class="chfooter">
+       <div id="d1">
+            @Copyright 2020. All Right Reserved
+        </div>
+        <div id="d2">
+            
+          <span>  Privacy Policy</span>             <span> Terms & Conditions</span> 
+    </div>
+    </div>
+
+    </footer>
+    <script src="js/inscris.js"></script>
+</body>
+    </html>
+    
+   

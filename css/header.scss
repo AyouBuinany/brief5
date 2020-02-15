@@ -1,0 +1,267 @@
+$opt:0.8;
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+#h2h{
+    margin-left: 60px;
+    font : {
+        family: cursive;
+        weight: bold;
+    };
+}
+#check-one ,label{
+    display: none;
+
+}
+input{
+margin-left: 50px;
+    border: none;
+    color: brown;
+    background-color: gainsboro;
+    padding: 10px 30px;
+    border-radius: 25px;
+}
+header{
+    #check-one{
+    @media (min-width:320px)and (max-width:1215px) {
+   &:checked ~ nav ul li{
+        display: block;
+    }
+        &:not(:checked) ~ nav ul li{
+            display: none;
+        }
+        &:checked ~ label div #span1{
+            transform: rotate(45deg);
+            position: absolute;
+            top: 12px;
+        }
+        &:checked ~ label div #span2{
+            transform: rotate(-45deg);
+            position: absolute;
+            top: 12px;
+        }
+        &:checked ~ label div #span3{
+        display: none;
+        }
+        &:not(:checked) ~ nav ul #picasso{
+            display: block;
+        }
+
+    }
+    }
+
+    label{
+        @media (min-width:320px)and (max-width:1215px) {
+        display: block;
+        position: fixed;
+        top: 3%;
+        z-index: 20;
+        left: 10px;
+   
+        div{
+            span{
+                width: 25px;
+                display: block;
+                margin-bottom: 3px;
+                border: 2px solid white;
+                
+            }
+        }
+       
+    }
+}
+
+    @media (min-width:320px)and (max-width:1215px) {
+        label{
+            display: block;
+
+        }
+    }
+background: {
+    
+   
+   size:cover;
+   repeat:no-repeat ;
+};
+height: 700px;
+overflow-y: hidden;
+&:hover .btns{
+display: block;
+}
+nav{
+  position: absolute;
+  width: 100%;
+  top: 2%;
+  @media (min-width:320px)and (max-width:1215px) {
+   
+    padding: 0%;
+    position: fixed;
+    z-index: 10;
+
+}
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+     @media (min-width:320px)and (max-width:1215px) {
+         flex-direction: column;
+         padding: 0%;
+         background-color: #5f9ea0a6;
+         border-radius: 0px 0px 0px 109px;
+         width: 100%;
+
+
+     }
+        li{
+            margin-top: 20px;
+            color: blanchedalmond;
+            list-style-type: none;
+            font-family: cursive;
+
+            input{
+                display: block;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+}
+li:nth-of-type(1){
+    margin-left: 0;
+    margin-top: 1px;
+    background: linear-gradient(-45deg,brown,gray,orange);
+    opacity: $opt;
+    font-weight: bold;
+    font-size: 35px;
+  box-shadow: 10px 5px 10px gray;
+  @media (min-width:320px) and (max-width:1215px){
+      margin : {
+          left: 0px;
+          top: -10px;
+      };
+      width: 100%;
+      text-align: center;
+
+  }
+}
+#ll2 
+{
+margin-top:15px;
+
+input{
+background-color: #0E1922;
+border-radius: 20px;
+opacity: $opt;
+border: none;
+padding: 10px 20px;
+color: white;
+}
+}
+%v1{
+    position:absolute;
+    top: 70%;
+   margin-left: 10%;;
+     color: white;
+}
+.contener{
+  @extend %v1;
+#h1{
+    margin-left: 30px;
+    font-size: 80px;
+    animation: anim1 2s  ease-in;
+    overflow: hidden;
+    white-space: nowrap;
+    @media (min-width:320px) and (max-width:1215px){
+        content: "GALERY";
+        animation: none;
+    }
+    @keyframes anim1
+     { 
+        0%{
+         width: 0ch;
+        }
+        50%{
+        width: 0ch;
+        }
+        75%{
+            width: 20ch;
+        }
+        100%{
+            width: 12ch;
+        }
+    }
+    @media (min-width:320px) and (max-width:1215px){
+        font-size: 50px;
+    }
+}
+}
+#btn1{
+    @extend %v1;
+margin : 10%;
+margin-left: 20%;
+    height: 45px;
+    width: 150px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #000000bf, #6e686c66);
+    border: none;
+    &:hover{
+        color: black;
+        font-family: sans-serif;
+        background: linear-gradient(-45deg,#607d8bc2, #ffcc80bd);
+    
+    }
+    @media (min-width:320px)and (max-width:1215px) {
+        margin : {
+            top: 130px;
+            left: 90px;
+        };
+    }
+}
+.btns{
+    border: {
+        radius:50%;
+        style:none;
+    
+    };
+    background: linear-gradient(45deg, #000000bf, #6e686c66);
+    color: white;
+    display: none;
+    position: absolute;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    
+    animation: animScal 5s infinite ease-in-out;
+    @keyframes animScal {
+        0%,100%{
+            transform: scale(1.1);
+            
+        }
+        50%{
+            transform: scale(1.3);
+    }
+}
+
+
+}
+
+.b1{
+left: 3%;
+}
+.b2{
+    right: 3%;
+}
+#divSlide{
+    display: flex;
+    overflow-x: hidden;
+}
+
+
+
+
+

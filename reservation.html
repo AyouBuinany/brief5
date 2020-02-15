@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+
+<body>
+<header>
+    <div id="divSlide">
+    <img src="images/slide/img1.jpg" alt="slide1" class="imgs">
+    <img src="images/slide/img2.png" alt="slide2" class="imgs">
+    <img src="images/slide/img3.jpg" alt="slide3" class="imgs">
+    <img src="images/slide/img4.jpg" alt="slide4" class="imgs">
+</div>
+       <input type="checkbox" id="check-one">
+       <label for="check-one">
+           <div>
+               <span id="span1"></span>
+               <span id="span2"></span>
+            <span id="span3"></span>
+           </div>
+       </label>
+       <nav>
+           <ul>
+               <li id="picasso">
+               PicassO
+
+               </li>
+               <li id="ll2">
+                   <input type="text" placeholder="Recherche">
+
+               </li>
+               <li>
+                <a href="galery.html">   GALERY</a>
+               </li>
+               <li>
+               <a href="inscris-toi.html"> INSCRIS-TOI</a> 
+            </li>
+            <li>
+                <a href="reservation.html"> RESERVATION</a> 
+             </li>
+           </ul>
+       </nav>
+       <button class="btns b1">
+        <
+       </button>
+       <button class="btns b2">
+        >
+    </button>
+       <div class="contener">
+        <h1 id="h1">
+                PicassO...
+        </h1>
+        <h2 id="h2h">
+            RESERVATION
+            
+    </h2>
+
+       </div>
+       <a href="inscris-toi.html">
+        <button id="btn1">
+    INSCRIS
+</button>
+</a>
+ </header>
+
+    <section class="section1">
+        <div class="divReserv" >
+            <div class="dr dr1">
+
+            </div>
+<div class="dchildReser">
+    
+<p>
+    Tableau Sur 
+</p>
+    <a href="#">"Animale"</a>
+
+    <p>
+        Prix à partir de : <strong>600 DH </strong> <span id="mony350">350 DH</span> 
+    </p>
+    <button  onclick="clicked(afichage,350 + 'DH','dr1',affichage,document.getElementById('affichagE'));">RESERVE</button>
+</div>
+        </div>
+        <div class="divReserv" >
+            <div class="dr dr2">
+
+            </div>
+            
+            <div class="dchildReser">
+              
+                <p>
+                    Tableau Sur 
+                </p>
+                    <a href="#">"Humaine"</a>
+            
+                    <p>
+                        Prix à partir de : <strong>500 DH </strong> <span id="mony300">300 DH</span> 
+                    </p>
+                    <button onclick="clicked(afichage,300 + 'DH','dr2',affichage,document.getElementById('affichagE'));" >RESERVE</button>
+                </div>
+        </div>
+        <div class="divReserv" >
+            <div class="dr dr3">
+
+            </div>
+            
+            <div class="dchildReser">
+               
+                <p>
+                    Tableau Sur 
+                </p>
+                    <a href="#">"Humain"</a>
+              
+                    <p>
+                        Prix à partir de : <strong>350 DH </strong> <span id="mony200">200 DH</span> 
+                    </p>
+                    <button onclick="clicked(afichage,200 + 'DH','dr3',affichage,document.getElementById('affichagE'));">RESERVE</button>
+                </div>
+        </div>
+        <div class="divReserv ">
+            <div class="dr dr4">
+
+            </div>
+            <div class="dchildReser">
+             
+                <p>
+                    Tableau Sur 
+                </p>
+                    <a href="#">"Fille"</a>
+                    <p>
+                        Prix à partir de : <strong>500 DH </strong> <span id="mony300">300 DH</span> 
+                    </p>
+                    <button onclick="clicked(afichage,300 + 'DH','dr4',affichage,document.getElementById('affichagE'));" >RESERVE</button>
+                </div>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="divReserv" >
+            <div class="db1">
+
+            </div>
+<div class="dchildReser">
+    
+<p>
+    Tableau Sur 
+</p>
+    <a href="#">"animaux"</a>
+
+    <p>
+        Prix à partir de : <strong>700 DH </strong> <span id="mony500">500 DH</span> 
+    </p>
+    <button  onclick="clicked(afichage,500 + 'DH','db1',affichage,document.getElementById('affichagE'));">RESERVE</button>
+</div>
+        </div>
+        <div class="divReserv">
+            <div class="db2">
+
+            </div>
+            
+            <div class="dchildReser">
+              
+                <p>
+                    Tableau Sur 
+                </p>
+                    <a href="#">"Bateau"</a>
+            
+                    <p>
+                        Prix à partir de : <strong>300 DH </strong> <span id="mony150">150 DH</span> 
+                    </p>
+                    <button onclick="clicked(afichage,150 + 'DH','db2',affichage,document.getElementById('affichagE'));">RESERVE</button>
+                </div>
+        </div>
+        <div class="divReserv" >
+            <div class="db3">
+
+            </div>
+            
+            <div class="dchildReser">
+               
+                <p>
+                    Tableau Sur 
+                </p>
+                    <a href="#">"Fleur"</a>
+              
+                    <p>
+                        Prix à partir de : <strong>400 DH </strong> <span id="mony200">200 DH</span> 
+                    </p>
+                    <button onclick="clicked(afichage,200 + 'DH','db3',affichage,document.getElementById('affichagE'));">RESERVE</button>
+                </div>
+        </div>
+        <div class="divReserv ">
+            <div class="db4">
+
+            </div>
+            <div class="dchildReser">
+             
+                <p>
+                    Tableau Sur 
+                </p>
+                    <a href="#">"Nature"</a>
+                    <p>
+                        Prix à partir de : <strong>300 DH </strong> <span id="monyZ">200 DH</span> 
+                    </p>
+                    <button onclick="clicked(afichage,200 + 'DH','db4',affichage,document.getElementById('affichagE'));">RESERVE</button>
+                </div>
+        </div>
+    </section>
+    <section class="section2 ss3" id="sect3">
+        <button id="close" onclick="closes(affichage);">Close</button>
+        <div class="divResers">
+    <div>
+    <form id="f3">
+    <div>
+        <p> First Name:</p> <p> <input type="text" placeholder="First Name" id="prenom" onkeyup="valid(this,regPrenom);"> </p>
+     </div>
+     <div>
+       <p> Last Name:</p>  <p> <input type="text" placeholder="Last Name" id="Nom" onkeyup="valid(this,regPrenom);"> </p>
+     </div>
+     <div>
+        <p>  Email: </p> <p><input type="text" placeholder="Email" id="email"  onkeyup="valid(this,regEmail);"> </p>
+      </div>
+    
+      <div>
+        <p> Telephone</p> <p><input type="tel" placeholder="Telephone" id="Telephone"  onkeyup="valid(this,regTel);"> </p>
+     </div>
+    
+     <div>
+        <p>Adresse:</p>  <p> <input type="text" placeholder="Adresse" id="Adresse" onkeyup="valid(this,regAdresse);"> </p>
+      </div>
+     
+      <div>
+        <p>Zip Code:</p>  <p> <input type="text" placeholder="ZipCode" id="ZipCode" onkeyup="valid(this,regCode);"> </p>
+      </div>
+    
+    
+</form>
+<div>
+    <button id="_btr" onclick="clickAlert()">OK</button>
+   </div>
+</div>
+<div id="R3"></div>
+<p id="affichp">
+  Total :<span id="affichagE">
+</span>
+</p>
+</div>
+
+</div>
+</section>
+<div id="alerted">
+<div id="child1"></div>
+<button class="btnss1 btnss2" id="confirm" onclick="confirmer()" > Confirmer</button>
+<div id="child2">
+
+</div>
+</div>
+ <footer id="f1">
+    <div class="divsfooter">
+        <div id="dfooter1">
+       <h1>PicassO</h1>
+    </div>
+        <div id="dfooter2"> 
+            <pre>
+            <h1>Pablo Ruiz</h1>
+            <p> 
+Pablo Ruiz Picasso, né à Malaga le 25 octobre 1881 et mort le 8 avril 1973 à Mougins,est un peintre, dessinateur,sculpteur et graveur espagnol ayant passé l'essentiel de sa vie en France.
+                
+            </p>
+            </pre>
+            <pre>
+            <h1> QUICK LINKS</h1>
+           
+                <p> <i class="fas fa-arrow-right" style="color: #688095;height: 10px;"></i> HOME</p>
+                <p><i class="fas fa-arrow-right" style="color: #688095;height: 10px;"></i>  réservation</p>
+                <p><i class="fas fa-arrow-right" style="color: #688095;height: 10px;"></i>  galery</p>
+                <p> <i class="fas fa-arrow-right" style="color: #688095;height: 10px;"></i>  CONTACT US </p>
+                <p> <i class="fas fa-arrow-right" style="color: #688095;height: 10px;"></i>  INSCRIS-TOI</p>
+            </pre>
+        </div>
+        <div id="dfooter3">
+            <pre>
+        <h1> CONTACT US</h1>
+        <p> Feel free to get in touch with us via phone or send us a message
+             </p>
+    
+     <p>  <span>+0001290003087</span> <span>picasso@gmail.com</span></p> 
+    </pre>
+        </div>
+    </div>
+    <div id="childfooter" class="chfooter">
+       <div id="d1">
+            @Copyright 2020. All Right Reserved
+        </div>
+        <div id="d2">
+            
+          <span>  Privacy Policy</span>             <span> Terms & Conditions</span> 
+    </div>
+    </div>
+
+    </footer>
+    <script src="js/reservation.js">
+     
+    </script>
+</body>
+    </html>
