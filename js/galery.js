@@ -78,20 +78,19 @@ console.log(" ___" +z);
  urlImagenature="images/nature/nature";
 
  window.addEventListener("load",
- remplirImg(urlImagefleur,"imgsI","imgI",0),
- remplirImg(urlImageville,"imgsI","imgI",1),
- remplirImg(urlImageanimaux,"imgsI","imgI",2),
- remplirImg(urlImagebateau,"imgsI","imgI",3),
- remplirImg(urlImagenature,"imgsI","imgI",4));
- function remplirImg(list, imgsI,imgI,j){
+ remplirImg(urlImagefleur,0),
+ remplirImg(urlImageville,1),
+ remplirImg(urlImageanimaux,2),
+ remplirImg(urlImagebateau,3),
+ remplirImg(urlImagenature,4));
+ function remplirImg(list,j){
 for(var i=1;i<9;i++){
 
     var aa=document.createElement('img');
-    aa.setAttribute("class",imgsI);
-    aa.setAttribute("id",imgI + i);
+    aa.setAttribute("class","imgsI");
+    aa.setAttribute("id","imgI" + i);
     aa.src= list + i + ".jpg";
     afichimag[j].appendChild(aa);
-    
 }
  }
  var clickout = document.getElementById("bout");
