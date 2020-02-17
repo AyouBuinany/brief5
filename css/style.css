@@ -173,7 +173,7 @@ li:nth-of-type(1) {
 
 .contener, #btn1 {
   position: absolute;
-  top: 70%;
+  top: 330px;
   margin-left: 10%;
   color: white;
 }
@@ -673,7 +673,7 @@ li:nth-of-type(1) {
   position: absolute;
   border: none;
   color: white;
-  top: 175%;
+  top: 1020px;
   background-color: #607d8b;
 }
 

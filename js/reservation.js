@@ -7,7 +7,8 @@ var c=0;
  var b = 0;
 window.onload=function(){  
     setInterval(btnpres , 5000);
-            }
+    datedebut.value=Date.value;
+}
 buttons[0].addEventListener("click",btnsuivant);
 buttons[1].addEventListener("click",btnpres);
 
@@ -49,8 +50,7 @@ function btnpres(){
   var regPrenom=/[A-Z]{5,10}/;
   var regEmail=/\w+@\w+\.(net|com|fr)/;
   var regCode=/(?=.*[0-9])[0-9]{4,5}/;
-  var regTel=/(?=.*(06|07|05))[0-9]{10,10}/;
-  var regAdresse=/\w{10,15}/;
+ 
   function valid(_champ,_reg){
     if(_champ.value==="" || !_champ.value.match(_reg)){
     _champ.style.border="1px solid red";
@@ -73,6 +73,7 @@ var afichage= document.getElementById("R3");
   function closes(listAffich){
     listAffich.style.display="none";
     console.log("none");
+    vider();
   }
   var nom = document.getElementById("Nom");
   var prenom = document.getElementById("prenom");
@@ -84,11 +85,12 @@ var afichage= document.getElementById("R3");
   var zcode=document.getElementById("ZipCode");
   var divalerted=document.getElementById("alerted");
   function clickAlert(){
-if(nom.value==="" || prenom.value==="" || email.value==="" || Telephone.value===""  || Adresse.value==="" || zcode.value===""){
+if(nom.value==="" || prenom.value==="" || email.value==="" || zcode.value==="" || dated(datedebut,datefin)==false){
     alert("remplir Tou les champs");
 }else{
+    if(dated(datedebut,datefin)==true)
     Affichimg(dchild,afichage.className,affichage);
-divAffichage.innerHTML="Le Prenom est :" + prenom.value + "<br>" + "Le Nom est :" + nom.value + "<br>" + "Email est :" + email.value + "<br>" + "telephone est :" +Telephone.value +"<br>" +  "Adresse est :" + Adresse.value + "<br>" + "Zip Code est :" + zcode.value + "<br>" ; 
+divAffichage.innerHTML="Le Prenom est :" + prenom.value + "<br>" + "Le Nom est :" + nom.value + "<br>" + "Email est :" + email.value + "<br>" + "Peroide De :" + datedebut.value + "<br>" + "Jusqu'a :" + datefin.value + "<br>" + "Zip Code est :" + zcode.value + "<br>" ; 
 vider();
 }
   }
@@ -106,7 +108,21 @@ vider();
     nom.value="";
     prenom.value="";
     email.value="";
-    Telephone.value="";
-    Adresse.value="";
+    datedebut.value="";
+    datefin.value="";
     zcode.value="";
+}
+var datedebut=document.getElementById("datedebut");
+var datefin=document.getElementById("datefin");
+function dated(_datedebut,_datefin){
+    if(_datedebut.value>_datefin.value || _datedebut.value===_datefin.value){
+      _datedebut.style.border="1px solid red";
+      _datefin.style.border="1px solid red";
+      return false;
+    }
+    else{
+        _datedebut.style.border="1px solid green";
+        _datefin.style.border="1px solid green";
+        return true;
+    }
 }
