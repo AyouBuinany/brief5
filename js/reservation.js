@@ -90,7 +90,7 @@ if(nom.value==="" || prenom.value==="" || email.value==="" || zcode.value==="" |
 }else{
     if(dated(datedebut,datefin)==true)
     Affichimg(dchild,afichage.className,affichage);
-divAffichage.innerHTML="Le Prenom est :" + prenom.value + "<br>" + "Le Nom est :" + nom.value + "<br>" + "Email est :" + email.value + "<br>" + "Peroide De :" + datedebut.value + "<br>" + "Jusqu'a :" + datefin.value + "<br>" + "Zip Code est :" + zcode.value + "<br>" ; 
+divAffichage.innerHTML="<span style='color: white;text-shadow: 5px 3px 10px black;'>Le Prenom est : </span>" + prenom.value + "<br>" + " <span style='color: white;text-shadow: 5px 3px 10px black;'> Le Nom est : </span>" + nom.value + "<br>" + " <span style='color: white;text-shadow: 5px 3px 10px black;'>Email est :</span>" + email.value + "<br>" + "<span style='color: white;text-shadow: 5px 3px 10px black;'> Peroide De : </span>" + datedebut.value + "<br>" + " <span style='color: white;text-shadow: 5px 3px 10px black;'> Jusqu'a : </span>" + datefin.value + "<br>" + "<span style='color: white;text-shadow: 5px 3px 10px black;'> Zip Code est : </span>" + zcode.value + "<br>" ; 
 vider();
 }
   }
@@ -125,4 +125,16 @@ function dated(_datedebut,_datefin){
         _datefin.style.border="1px solid green";
         return true;
     }
+}
+var clickout = document.getElementById("bout");
+window.addEventListener("scroll",out);
+function out(){
+
+if(window.pageYOffset>1000){
+    
+    clickout.style.display="block";
+}
+else{
+   clickout.style.display="none"; 
+}
 }

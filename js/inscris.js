@@ -116,13 +116,27 @@ _balise.innerHTML="Remplir Tout les Champs !";
 _bts.style.display="block";
 /*window.open("file:///C:/Users/admin/Desktop/picasso/test.html","_blank");*/
 }
-else
+else{
     alert("Welcom : " + prenom.value);
     console.log(2);
  window.open("file:///C:/Users/admin/Desktop/picasso/reservation.html","_parent");
+}
 }
 
 _bts.onclick=function(){
  /*window.open("file:///C:/Users/admin/Desktop/picasso/inscris-toi.html","_parent");*/
       _affich.style.display="none";    
+}
+
+var clickout = document.getElementById("bout");
+window.addEventListener("scroll",out);
+function out(){
+
+if(window.pageYOffset>1000){
+    
+    clickout.style.display="block";
+}
+else{
+   clickout.style.display="none"; 
+}
 }
